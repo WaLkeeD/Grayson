@@ -1,0 +1,510 @@
+@import "font.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair";
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* ======header====== */
+.header__nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__nav {
+    padding: 25px 0;
+}
+
+.header__link {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.header__link img {
+    margin-left: 4px;
+}
+
+.header__form {
+    max-width: 212px;
+    width: 100%;
+    height: 28px;
+    display: flex;
+}
+
+.header__inp {
+    max-width: 180px;
+    width: 100%;
+    border: 1px solid #41a28e;
+    padding: 6px 12px;
+    margin-right: 4px;
+}
+
+.header__btn {
+    width: 28px;
+    height: 28px;
+    background: #41a28e;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__dropdown {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 160px;
+
+    border-radius: 2px;
+    opacity: 0;
+    z-index: -1;
+    padding-top: 13px;
+}
+
+.header__dropdown-link {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    padding: 12px 30px;
+    display: flex;
+    background: #ffffff;
+}
+
+.header__dropdown-item {
+    border: 1px solid #e5e5e5;
+}
+
+.header__dropdown-item:nth-of-type(2) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.header__item:hover .header__dropdown {
+    z-index: 1;
+    opacity: 1;
+}
+
+.header__intro {
+    background: url("../img/header/header.png") no-repeat center center/ cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__intro-title {
+    padding: 16px 60px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 50px;
+    line-height: 67px;
+    color: #ffffff;
+}
+
+.header__intro-subtitle {
+    font-size: 22px;
+    line-height: 29px;
+    color: #ffffff;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.38);
+    margin: 30px 0 50px;
+}
+
+.header__intro-btn {
+    padding: 22px 35px;
+    background: #ffffff;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+    transition: 0.4s;
+}
+
+.header__intro-btn:hover {
+    color: #ffffff;
+    background: #41a28e;
+}
+
+/* ======header====== */
+
+/* =====main====== */
+.fashion {
+    padding: 42px 0 72px;
+}
+
+.fashion__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+.fashion__card img {
+    height: 100%;
+    width: 100%;
+}
+
+.fashion__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.fashion__card-txt {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    padding: 2px 0;
+    font-size: 25px;
+    line-height: 33px;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(75, 72, 72, 0.7);
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.fashion__card:hover .fashion__card-txt {
+    transform: rotate(0);
+    bottom: 0;
+}
+
+.title {
+    font-size: 50px;
+    line-height: 67px;
+    color: #000000;
+}
+
+.fashion__title {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.subtitle {
+    max-width: 496px;
+    width: 100%;
+    margin: 0 auto;
+    color: #666666;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.project {
+    background: url("../img/projec/bg.png") no-repeat center center/cover fixed;
+    padding: 120px 0;
+}
+
+.project__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.project__title {
+    color: #ffffff;
+}
+
+.project__link {
+    padding: 22px 42px;
+    background: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 22px;
+    display: inline-block;
+}
+
+.product {
+    padding: 50px 0;
+}
+
+.product__title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.column__product-menu {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    transition: 0.4s;
+}
+
+.column__product:hover .column__product-menu {
+    bottom: 0;
+}
+
+.column__product:hover .column__product-photo {
+    transform: scale(1.1);
+}
+
+.column__product {
+    max-width: 255px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.column__product-photo {
+    width: 100%;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+.column__product-add {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #ffffff;
+}
+
+.column__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.column__icons img {
+    vertical-align: middle;
+}
+
+.column__desc-name {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 6px;
+    color: #000000;
+}
+
+.column__desc-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+    color: #000000;
+}
+.column__desc {
+    margin-top: 43px;
+}
+
+.column__desc-price span {
+    color: #666666;
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+
+.product__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.stock,
+.sale {
+    position: relative;
+}
+
+.stock::before,
+.sale::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    padding: 10px 18px;
+    background: #4b484b;
+    display: block;
+    z-index: 5;
+}
+
+.stock::before {
+    content: "OUT OF STOCK";
+}
+
+.sale::before {
+    content: "SALE";
+}
+
+/* =====main====== */
+/*==footer== */
+
+.footer {
+    background: #000000;
+}
+
+.footer__row {
+    padding: 36px 0;
+}
+
+.footer__column-title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.footer__column-link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    transition: 0.4s;
+    gap: 10px;
+}
+
+.footer__column-link:hover {
+    color: #41a28e;
+}
+
+.footer__column-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__column:nth-of-type(3) .footer__column-list {
+    gap: 12px;
+}
+
+.footer__column {
+    max-width: 255px;
+    width: 100%;
+}
+
+.footer__column-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer__row {
+    display: flex;
+}
+
+.footer__column-form {
+    display: flex;
+    height: 44px;
+}
+
+.footer__column-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.footer__column-form input {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #919191;
+    border: none;
+    outline: none;
+    padding: 14px 10px;
+}
+
+.footer__column-form button {
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background: #41a28e;
+}
+
+.footer_txt {
+    background: #121212;
+    padding: 40px 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #666666;
+    justify-content: center;
+}
+
+.footer_txt span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    text-shadow: 0px 0px 4px #e52d27;
+    margin: 0 3px;
+}
+
+.media {
+    display: none;
+}
