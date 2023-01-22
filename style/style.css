@@ -1,10 +1,10 @@
-@import "font.css";
+@import 'font.css';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Playfair";
+    font-family: 'Playfair';
     font-weight: 400;
 }
 
@@ -45,6 +45,7 @@ a {
     color: #000000;
     display: flex;
     align-items: center;
+
 }
 
 .header__link img {
@@ -61,7 +62,7 @@ a {
 .header__inp {
     max-width: 180px;
     width: 100%;
-    border: 1px solid #41a28e;
+    border: 1px solid #41A28E;
     padding: 6px 12px;
     margin-right: 4px;
 }
@@ -69,7 +70,7 @@ a {
 .header__btn {
     width: 28px;
     height: 28px;
-    background: #41a28e;
+    background: #41A28E;
     border: none;
     display: flex;
     justify-content: center;
@@ -98,11 +99,12 @@ a {
     color: #000000;
     padding: 12px 30px;
     display: flex;
-    background: #ffffff;
+    background: #FFFFFF;
+
 }
 
 .header__dropdown-item {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #E5E5E5;
 }
 
 .header__dropdown-item:nth-of-type(2) {
@@ -116,7 +118,7 @@ a {
 }
 
 .header__intro {
-    background: url("../img/header/header.png") no-repeat center center/ cover;
+    background: url('../img/header/header.png')no-repeat center center/ cover;
     min-height: 750px;
     display: flex;
     justify-content: center;
@@ -129,29 +131,29 @@ a {
     background: rgba(0, 0, 0, 0.7);
     font-size: 50px;
     line-height: 67px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .header__intro-subtitle {
     font-size: 22px;
     line-height: 29px;
-    color: #ffffff;
+    color: #FFFFFF;
     text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.38);
     margin: 30px 0 50px;
 }
 
 .header__intro-btn {
     padding: 22px 35px;
-    background: #ffffff;
+    background: #FFFFFF;
     font-size: 12px;
     line-height: 16px;
-    color: #000;
-    transition: 0.4s;
+    color: #000000;
+    transition: .4s;
 }
 
 .header__intro-btn:hover {
-    color: #ffffff;
-    background: #41a28e;
+    color: #FFFFFF;
+    background: #41A28E;
 }
 
 /* ======header====== */
@@ -185,11 +187,11 @@ a {
     padding: 2px 0;
     font-size: 25px;
     line-height: 33px;
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     background: rgba(75, 72, 72, 0.7);
     transform: rotate(180deg);
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .fashion__card:hover .fashion__card-txt {
@@ -214,14 +216,14 @@ a {
     margin: 0 auto;
     color: #666666;
     text-align: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
 
 .project {
-    background: url("../img/projec/bg.png") no-repeat center center/cover fixed;
+    background: url('../img/projec/bg.png')no-repeat center center/cover fixed;
     padding: 120px 0;
 }
 
@@ -229,16 +231,16 @@ a {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .project__title {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .project__link {
     padding: 22px 42px;
-    background: #ffffff;
+    background: #FFFFFF;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -265,7 +267,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 16px 20px;
-    transition: 0.4s;
+    transition: .4s;
 }
 
 .column__product:hover .column__product-menu {
@@ -286,7 +288,7 @@ a {
 .column__product-photo {
     width: 100%;
     vertical-align: middle;
-    transition: 0.4s;
+    transition: .4s;
 }
 
 .column__product-add {
@@ -296,7 +298,7 @@ a {
     display: flex;
     align-items: center;
     gap: 14px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .column__icons {
@@ -321,74 +323,74 @@ a {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    font-feature-settings: "pnum" on, "lnum" on, "liga" off;
+    font-feature-settings: 'pnum'on, 'lnum'on, 'liga'off;
     color: #000000;
 }
-.column__desc {
+.column__desc{
     margin-top: 43px;
 }
 
-.column__desc-price span {
+.column__desc-price span{
     color: #666666;
     text-decoration: line-through;
     margin-right: 15px;
 }
 
-.product__row {
+.product__row{
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
 }
 
 .stock,
-.sale {
+.sale{
     position: relative;
 }
 
 .stock::before,
-.sale::before {
+.sale::before{
     position: absolute;
     top: 0;
     left: 0;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #ffffff;
+    color: #FFFFFF;
     padding: 10px 18px;
-    background: #4b484b;
+    background: #4B484B;
     display: block;
     z-index: 5;
 }
 
-.stock::before {
-    content: "OUT OF STOCK";
+.stock::before{
+    content: 'OUT OF STOCK';
 }
 
-.sale::before {
-    content: "SALE";
+.sale::before{
+    content: 'SALE';
 }
 
 /* =====main====== */
 /*==footer== */
 
-.footer {
+.footer{
     background: #000000;
 }
 
-.footer__row {
+.footer__row{
     padding: 36px 0;
 }
 
-.footer__column-title {
+.footer__column-title{
     font-size: 24px;
     line-height: 32px;
-    color: #ffffff;
+    color: #FFFFFF;
     margin-bottom: 40px;
 }
 
-.footer__column-link {
-    font-family: "Roboto";
+.footer__column-link{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -396,47 +398,47 @@ a {
     display: flex;
     align-items: center;
 
-    color: #ffffff;
+    color: #FFFFFF;
     transition: 0.4s;
     gap: 10px;
 }
 
-.footer__column-link:hover {
-    color: #41a28e;
+.footer__column-link:hover{
+    color: #41A28E;
 }
 
-.footer__column-list {
+.footer__column-list{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.footer__column:nth-of-type(3) .footer__column-list {
+.footer__column:nth-of-type(3) .footer__column-list{
     gap: 12px;
 }
 
-.footer__column {
+.footer__column{
     max-width: 255px;
     width: 100%;
 }
 
-.footer__column-icons {
+.footer__column-icons{
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.footer__row {
+.footer__row{
     display: flex;
 }
 
-.footer__column-form {
+.footer__column-form{
     display: flex;
     height: 44px;
 }
 
-.footer__column-text {
-    font-family: "Roboto";
+.footer__column-text{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -444,12 +446,12 @@ a {
     display: flex;
     align-items: center;
 
-    color: #ffffff;
+    color: #FFFFFF;
     margin: 20px 0;
 }
 
-.footer__column-form input {
-    font-family: "Roboto";
+.footer__column-form input{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -463,11 +465,11 @@ a {
     padding: 14px 10px;
 }
 
-.footer__column-form button {
+.footer__column-form button{
     padding: 12px 10px;
     border: none;
     outline: none;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -475,14 +477,15 @@ a {
 
     display: flex;
     align-items: center;
-    color: #ffffff;
-    background: #41a28e;
+    color: #FFFFFF;
+    background: #41A28E;
+
 }
 
-.footer_txt {
+.footer_txt{
     background: #121212;
     padding: 40px 0;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -494,17 +497,17 @@ a {
     justify-content: center;
 }
 
-.footer_txt span {
-    font-family: "Roboto";
+.footer_txt span{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #666666;
-    text-shadow: 0px 0px 4px #e52d27;
+    text-shadow: 0px 0px 4px #E52D27;
     margin: 0 3px;
 }
 
-.media {
+.media{
     display: none;
 }

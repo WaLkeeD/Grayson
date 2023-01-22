@@ -92,10 +92,6 @@
         max-width: 255px;
         flex-wrap: wrap;
     }
-
-    .column__product:hover .column__product-photo {
-        transform: scale(1);
-    }
 }
 
 @media (max-width: 400px){
